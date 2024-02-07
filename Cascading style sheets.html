@@ -13,14 +13,69 @@ selector{
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
     <style>
 h1{
-    color:aqua
+    color:aqua !important
+}
+/*CSS selektors*/
 
+h2,h3 {color: blue;
+}
+#sec1{
+    background-color:aquamarine ;
+}
+img.left{
+    float: left;
+    clear: both;
+}
+img.right{
+    float: right;
+    clear: both;
+}
+h1:first-child{
+    background-color: rgb(39, 10, 186);
+}
+article :last-child{
+    background-color: rgb(236, 213, 13);
+}
+a{
+    color: rgb(228, 22, 22);
+}
+Table {
+width: 100%;
+}
+Table tr {
+background-color: aquamarine;
+height: 100px;
+}
+Table td{
+color: red;
+}
+table tr:nth-child(2n){
+    background-color: rgb(6, 108, 108);
 }
 
 
-    </style>
+
+input[type="text"]{
+    color: rgb(93, 20, 209);
+}
+
+input[type="password"]{
+    color: rgb(29, 186, 18);
+}
+
+h1::after,h1::before{
+    content: "*";
+    color: rgb(93, 32, 5);
+}
+
+
+
+
+</style>
+
 </head>
 <body>
     <!-- Semantics-->
@@ -40,11 +95,11 @@ h1{
             <h1>Section 1</h1>
             <article>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit consequuntur repellat maiores, nostrum nesciunt ut commodi ex magni dolore dolor facilis iusto totam optio vel in laborum fuga assumenda repudiandae?</p>
-                <img src="./img_sem_elements.gif" alt="" width="200px">
+                <img src="./img_sem_elements.gif" alt="" width="200px" class="left">
             </article>
             <article>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit consequuntur repellat maiores, nostrum nesciunt ut commodi ex magni dolore dolor facilis iusto totam optio vel in laborum fuga assumenda repudiandae?</p>
-                <img src="./img_sem_elements.gif" alt="" width="200px"> 
+                <img src="./img_sem_elements.gif" alt="" width="200px" class="right"> 
             </article>
             <article>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit consequuntur repellat maiores, nostrum nesciunt ut commodi ex magni dolore dolor facilis iusto totam optio vel in laborum fuga assumenda repudiandae?</p>
@@ -56,11 +111,11 @@ h1{
             <h1>Section 2</h1>
             <article>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit consequuntur repellat maiores, nostrum nesciunt ut commodi ex magni dolore dolor facilis iusto totam optio vel in laborum fuga assumenda repudiandae?</p>
-                <img src="./img_sem_elements.gif" alt="" width="200px">
+                <img src="./img_sem_elements.gif" alt="" width="200px" class="left">
             </article>
             <article>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit consequuntur repellat maiores, nostrum nesciunt ut commodi ex magni dolore dolor facilis iusto totam optio vel in laborum fuga assumenda repudiandae?</p>
-                <img src="./img_sem_elements.gif" alt="" width="200px">
+                <img src="./img_sem_elements.gif" alt="" width="200px" class="right">
             </article>
             <article>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit consequuntur repellat maiores, nostrum nesciunt ut commodi ex magni dolore dolor facilis iusto totam optio vel in laborum fuga assumenda repudiandae?</p>
@@ -72,11 +127,11 @@ h1{
             <h1>Section 3</h1>
             <article>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit consequuntur repellat maiores, nostrum nesciunt ut commodi ex magni dolore dolor facilis iusto totam optio vel in laborum fuga assumenda repudiandae?</p>
-                <img src="./img_sem_elements.gif" alt="" width="200px">
+                <img src="./img_sem_elements.gif" alt="" width="200px" class="left">
             </article>
             <article>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit consequuntur repellat maiores, nostrum nesciunt ut commodi ex magni dolore dolor facilis iusto totam optio vel in laborum fuga assumenda repudiandae?</p>
-                <img src="./img_sem_elements.gif" alt="" width="200px">
+                <img src="./img_sem_elements.gif" alt="" width="200px" class="right">
             </article>
             <article>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit consequuntur repellat maiores, nostrum nesciunt ut commodi ex magni dolore dolor facilis iusto totam optio vel in laborum fuga assumenda repudiandae?</p>
@@ -84,6 +139,44 @@ h1{
             </article>
         
     </section>
+    <h1>Table</h1>
+    <table>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
 
     </main>
 <footer>
@@ -92,6 +185,8 @@ h1{
 
     </address>
     <form action="">
+    <input type="text" name="" id=""> 
+    <input type="password" name="" id="" >  
 
     </form>
 </footer>    
